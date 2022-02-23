@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><b>Reto 7: </b>Programar un selector de avatar</p>
+    <form id="form-avatar">
+      <div class="filds">
+        <label for="name">Nombre y apellido: </label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div class="filds">
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="filds">
+        <label for="photo">Foto: </label>
+        <select name="photo" id="photo">
+          <option value="">Selecciona una foto</option>
+          <option value="img/greeicy.jpg">Greeicy</option>
+          <option value="img/roca.jpg">Johnson</option>
+          <option value="img/sofia.jpg">Sofia</option>
+          <option value="img/smith.jpg">Will</option>
+        </select>
+      </div>
+    </form>
+
+    <div id="container-avatar">
+      <div id="show-img-avatar"></div>
+      <p id="show-name-avatar"></p>
+      <p id="show-email-avatar"></p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
