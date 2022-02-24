@@ -1,9 +1,9 @@
 const messageTemperature = document.getElementById('message-temperature');
 const numberTemperature = document.getElementById('number-temperature');
 
-numberTemperature.addEventListener('mousemove', messageNumberTemperature);
+numberTemperature.addEventListener('input', messageNumberTemperature);
 
-function messageNumberTemperature(event) {
+function messageNumberTemperature() {
   if (numberTemperature.value < 10) {
     messageTemperature.innerText = `${numberTemperature.value}°C Hace mucho frío.`;
   } else if (numberTemperature.value < 26 && numberTemperature.value >= 10) {
