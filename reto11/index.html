@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../libs/bootstrap-5.0.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      <b>Reto 11: </b>Redimensionar el rectángulo al cambiar su altura y ancho.
+      Utilizar bootstrap para la maquetación.
+    </p>
+    <div id="container">
+      <div>
+        <div id="input-range1">
+          <label for="width">Ancho</label>
+          <input
+            type="range"
+            id="width"
+            class="form-range"
+            min="100"
+            max="500"
+          />
+          <p id="message1"></p>
+        </div>
+        <div id="input-range2">
+          <label for="height">Alto</label>
+          <input
+            type="range"
+            id="height"
+            class="form-range"
+            min="100"
+            max="500"
+          />
+          <p id="message2"></p>
+        </div>
+      </div>
+      <div id="box"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

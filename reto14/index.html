@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../libs/bootstrap-5.0.2/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><b>Reto 14: </b>Piedra, papel o tijera.</p>
+    <div>
+      <button type="button" id="stone" value="piedra" class="btn btn-primary">
+        Piedra
+      </button>
+      <button type="button" id="paper" value="papel" class="btn btn-primary">
+        Papel
+      </button>
+      <button
+        type="button"
+        id="scissors"
+        value="tijera"
+        class="btn btn-primary"
+      >
+        Tijera
+      </button>
+    </div>
+    <div>
+      <h1 id="player">Jugador: 0</h1>
+      <h1 id="computer">Computadora: 0</h1>
+    </div>
+
+    <!-- Sección de la ventana modal -->
+    <div>
+      <div id="view-modal" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin sección de la ventana modal -->
+  </body>
+  <script src="../libs/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</html>

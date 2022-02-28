@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../libs/bootstrap-5.0.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      <b>Reto 12: </b>Alterar el radio de los bordes de la caja. Utilizar
+      bootstrap para la maquetación.
+    </p>
+    <div id="container">
+      <div>
+        <label for="radio">Radio del borde</label>
+        <input
+          type="range"
+          name="radio"
+          id="radio"
+          class="form-range"
+          min="0"
+          max="100"
+        />
+        <p id="message"></p>
+      </div>
+      <div>
+        <div id="box"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
