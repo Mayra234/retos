@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="../libs/bootstrap-5.0.2/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      <b>Reto 16: </b>Validar un campo requerido. Utilizar bootstrap para los
+      estilos. Checar la documentación de forms validation.
+    </p>
+    <form>
+      <div id="input-field">
+        <label for="first-name" class="form-label">First name</label>
+        <input type="text" id="first-name" required />
+        <div id="validate-name" class="invalid-feedback">
+          El campo nombre es requerido
+        </div>
+      </div>
+    </form>
+    <div class="col-12">
+      <button type="button" class="btn btn-primary" id="button" disabled>
+        Enviar
+      </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
