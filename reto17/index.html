@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="../libs/bootstrap-5.0.2/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="row g-3" id="form-person">
+      <div class="col-md-4">
+        <label for="first-name" class="form-label">Primer Nombre</label>
+        <input
+          type="text"
+          id="first-name"
+          class="form-control"
+          name="first-name" required onkeyup="validateFirstName(this.value)"
+        />
+        <p class="invalid-feedback">Este campo es requerido</p>
+      </div>
+      <div class="col-md-4">
+        <label for="second-name" class="form-label">Segundo Nombre</label>
+        <input type="text" class="form-control" id="second-name" name="last-name" onkeyup="validateSecondName(this.value)" required />
+        <p class="invalid-feedback">Este campo es requerido</p>
+      </div>
+      <div class="col-md-4">
+        <label for="age" class="form-label">Edad</label>
+        <input type="number" class="form-control" id="age" name="age" onkeyup="validateAge(this.value)" required/>
+        <p class="invalid-feedback">Este campo es requerido</p>
+      </div>
+      <div class="col-md-4">
+        <label for="cellphone-city" class="form-label">Número Fijo Bogotá</label>
+        <input
+          type="number"
+          class="form-control"
+          id="cellphone-city"
+          placeholder="Código de área más número"
+          onkeyup="validateCellphoneCity(this.value)"
+        />
+        <p class="invalid-feedback" id="message">Lo digitado no es correcto</p>
+        </div>
+        <div class="col-md-4">
+          <label for="city" class="form-label">Ciudad</label>
+          <select class="form-select" id="city" name="city" required>
+            <option value="">Seleciona la cuidad</option>
+            <option value="Cartagena">Cartagena</option>
+            <option value="Medellín">Medellín</option>
+            <option value="Cali">Cali</option>
+            <option value="Bucaramanga">Bucaramanga</option>
+            <option value="Pasto">Pasto</option>
+            <option value="Leticia">Leticia</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Bogotá">Bogotá</option>
+            <option value="Barranquilla">Barranquilla</option>
+            <option value="Neiva">Neiva</option>
+          </select>
+          <p class="invalid-feedback" >Este campo es requerido</p>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="button" class="btn btn-primary" id="add" disabled >Enviar</button>
+      </div>
+    </form>
+
+     <!--Ventana modal-->
+    <div
+        id="view-modal"
+        class="modal fade"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+  <script src="../libs/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</html>
