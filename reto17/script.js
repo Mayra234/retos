@@ -82,3 +82,8 @@ function showModal() {
   `;
   modalTitle.innerText = `Datos de ${firstName.value}`;
 }
+
+function menssageWord(event) {
+  if (event.match()) {
+  }
+}

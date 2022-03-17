@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/libs/bootstrap-5.0.2/css/bootstrap.min.css"
+    />
+    <title></title>
+  </head>
+  <body>
+    <form class="row g-3" id="form-person">
+      <div class="col-md-4">
+        <label for="firstName" class="form-label">Primer Nombre</label>
+        <input
+          type="text"
+          class="form-control form-field"
+          name="firstName"
+        />
+      </div>
+      <div class="col-md-4">
+        <label for="secondName" class="form-label">Segundo Nombre</label>
+        <input type="text" class="form-control form-field" name="secondName"/>
+      </div>
+      <div class="col-md-4">
+        <label for="age" class="form-label">Edad</label>
+        <input type="number" class="form-control form-field" name="age"/>
+      </div>
+      <div class="col-md-4">
+        <label for="phone" class="form-label">Fijo Bogotá</label>
+        <input
+          type="text"
+          class="form-control form-field"
+          name="phone"
+        />
+         </div>
+        <div class="col-md-4">
+          <label for="city" class="form-label">Ciudad</label>
+          <select class="form-select form-field" name="city">
+            <option value="">Seleciona la cuidad</option>
+            <option>Cartagena</option>
+            <option>Medellín</option>
+            <option>Cali</option>
+            <option>Bucaramanga</option>
+            <option>Pasto</option>
+            <option>Leticia</option>
+            <option>Manizales</option>
+            <option>Bogotá</option>
+            <option>Barranquilla</option>
+            <option>Neiva</option>
+          </select>
+          </div>
+      </div>
+      <div class="col-12">
+        <button type="button" class="btn btn-primary" disabled >Enviar</button>
+      </div>
+    </form>
+
+     <!--Ventana modal-->
+    <div
+        id="view-modal"
+        class="modal fade"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+  <script src="/libs/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+  <script src="/utils/max.js"></script>
+  <script src="/utils/min.js"></script>
+  <script src="/utils/number.js"></script>
+  <script src="/utils/phone.js"></script>
+  <script src="/utils/required.js"></script>
+  <script src="/utils/singleWorld.js"></script>
+  <script src="/utils/cleanErrorMessage.js"></script>
+  <script src="/utils/isFormInvalid.js"></script>
+  <script src="/utils/printFieldErrorMessage.js"></script>
+  <script src="/utils/setFieldValue.js"></script>
+  <script src="/utils/validateField.js"></script>
+  <script src="/utils/validate.js"></script>
+  <script src="/utils/showModalInvalid.js"></script>
+  <script src="script.js"></script>
+</html>

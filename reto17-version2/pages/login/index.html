@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/libs/bootstrap-5.0.2/css/bootstrap.min.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Login</h1>
+      <form id="form-login" class="row g-3">
+        <div class="col-md-4">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control form-field" name="email" />
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Contraseña</label>
+          <input
+            type="password"
+            class="form-control form-field"
+            name="password"
+          />
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+      <!--Ventana modal-->
+      <div id="view-modal" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/libs/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+  <script src="/utils/required.js"></script>
+  <script src="/utils/email.js"></script>
+  <script src="/utils/cleanErrorMessage.js"></script>
+  <script src="/utils/isFormInvalid.js"></script>
+  <script src="/utils/printFieldErrorMessage.js"></script>
+  <script src="/utils/validateField.js"></script>
+  <script src="/utils/setFieldValue.js"></script>
+  <script src="/utils/validate.js"></script>
+  <script src="script.js"></script>
+</html>
