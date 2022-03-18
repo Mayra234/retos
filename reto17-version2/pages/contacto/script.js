@@ -33,7 +33,7 @@ submitButton.addEventListener('click', () => {
     validate(fields);
     showModalValid();
   } catch (error) {
-    alert(error);
+    showModalInvalid();
   } finally {
     submitButton.disabled = isFormInvalid(errors);
   }

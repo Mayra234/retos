@@ -3,7 +3,7 @@ const identification = (
   digitsNumber = 10,
   errorMessage = 'El número debe contener {{digitsNumber}} dígitos'
 ) => {
-  const regexp = `^$\\d+$`;
+  const regexp = `^\\d{8,10}$`;
   if (new RegExp(regexp).test(value)) {
     return true;
   } else {
